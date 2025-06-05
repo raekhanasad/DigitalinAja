@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      DigitalinAja - Transformasi Digital UMKM dengan Low Code No Code
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <h2>DigitalinAja</h2>
+        <p>Mempersiapkan solusi digital terbaik...</p>
+      </div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Particle Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Floating Elements -->
+    <div class="floating-element floating-1"></div>
+    <div class="floating-element floating-2"></div>
+    <div class="floating-element floating-3"></div>
+    <div class="floating-element floating-4"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <span class="logo-icon">🚀</span>
+          <span class="logo-text">DigitalinAja</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Beranda</a></li>
+          <li><a href="#layanan" class="nav-link">Layanan</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+        <a href="#konsultasi" class="cta-btn">
+          <i class="fas fa-rocket"></i>
+          <span>Konsultasi Gratis</span>
+        </a>
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="badge animate-fade-up">
+            <i class="fas fa-star"></i>
+            <span>Platform Transformasi Digital #1</span>
+          </div>
+          <h1 class="hero-title animate-fade-up">
+            <span class="gradient-text">Transformasi Digital</span>
+            <span class="highlight-text">UMKM</span> dengan
+            <span class="typing-text" id="typingText"></span>
+          </h1>
+          <p class="hero-subtitle animate-fade-up">
+            DigitalinAja adalah program inovasi wirausaha berbasis jasa digital
+            yang memanfaatkan platform Low Code No Code untuk membantu pelaku
+            UMKM lokal melakukan transformasi digital dengan cepat, mudah, dan
+            terjangkau.
+          </p>
+          <div class="hero-stats animate-fade-up">
+            <div class="stat-item">
+              <div class="stat-number" data-count="500">0</div>
+              <div class="stat-label">UMKM Terlayani</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="95">0</div>
+              <div class="stat-label">% Kepuasan</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="30">0</div>
+              <div class="stat-label">Hari Implementasi</div>
+            </div>
+          </div>
+          <div class="hero-buttons animate-fade-up">
+            <a href="#layanan" class="btn-primary ripple-effect">
+              <i class="fas fa-play"></i>
+              <span>Mulai Transformasi</span>
+            </a>
+            <a href="#tentang" class="btn-secondary ripple-effect">
+              <i class="fas fa-info-circle"></i>
+              <span>Pelajari Lebih Lanjut</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-cards">
+            <div class="visual-card card-1 animate-float">
+              <div class="card-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Low Code</h3>
+              <p>Minimal coding required</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="visual-card card-2 animate-float">
+              <div class="card-icon">
+                <i class="fas fa-mouse-pointer"></i>
+              </div>
+              <h3>No Code</h3>
+              <p>Drag & drop solution</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="visual-card card-3 animate-float">
+              <div class="card-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Fast Deploy</h3>
+              <p>Quick implementation</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-illustration">
+            <div class="illustration-element element-1"></div>
+            <div class="illustration-element element-2"></div>
+            <div class="illustration-element element-3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll untuk eksplorasi</span>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="tentang">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fas fa-gem"></i>
+            <span>Keunggulan Kami</span>
+          </div>
+          <h2 class="section-title">
+            Mengapa <span class="gradient-text">DigitalinAja</span>
+            Pilihan Terbaik?
+          </h2>
+          <p class="section-subtitle">
+            Kami memberikan solusi transformasi digital yang tepat sasaran untuk
+            UMKM dengan pendekatan yang mudah dipahami dan diimplementasikan
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card hover-lift">
+            <div class="feature-icon icon-1">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Cepat & Efisien</h3>
+            <p>
+              Proses transformasi digital yang biasanya memakan waktu
+              berbulan-bulan dapat diselesaikan dalam hitungan minggu dengan
+              platform Low Code No Code
+            </p>
+            <div class="feature-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="feature-card hover-lift">
+            <div class="feature-icon icon-2">
+              <i class="fas fa-coins"></i>
+            </div>
+            <h3>Terjangkau</h3>
+            <p>
+              Biaya yang jauh lebih rendah dibandingkan pengembangan
+              konvensional, cocok untuk budget UMKM yang terbatas
+            </p>
+            <div class="feature-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="feature-card hover-lift">
+            <div class="feature-icon icon-3">
+              <i class="fas fa-user-friendly"></i>
+            </div>
+            <h3>Mudah Digunakan</h3>
+            <p>
+              Interface yang user-friendly memungkinkan pemilik UMKM untuk
+              mengelola sendiri sistem digital mereka tanpa keahlian teknis yang
+              rumit
+            </p>
+            <div class="feature-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="feature-card hover-lift">
+            <div class="feature-icon icon-4">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Dapat Disesuaikan</h3>
+            <p>
+              Solusi yang dapat dikustomisasi sesuai dengan kebutuhan spesifik
+              setiap UMKM, mulai dari toko online hingga sistem manajemen
+              inventory
+            </p>
+            <div class="feature-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="feature-card hover-lift">
+            <div class="feature-icon icon-5">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile Ready</h3>
+            <p>
+              Semua solusi yang kami buat sudah responsive dan optimized untuk
+              perangkat mobile, mengikuti trend konsumen digital
+            </p>
+            <div class="feature-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="feature-card hover-lift">
+            <div class="feature-icon icon-6">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Pelatihan & Support</h3>
+            <p>
+              Kami menyediakan pelatihan komprehensif dan support berkelanjutan
+              untuk memastikan kesuksesan transformasi digital Anda
+            </p>
+            <div class="feature-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="layanan">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fas fa-tools"></i>
+            <span>Layanan Kami</span>
+          </div>
+          <h2 class="section-title">
+            Solusi <span class="gradient-text">Transformasi Digital</span>
+            Terlengkap
+          </h2>
+          <p class="section-subtitle">
+            Paket layanan lengkap untuk mendukung perjalanan digital UMKM Anda
+            dari awal hingga sukses
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card hover-scale">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-store"></i>
+              </div>
+              <h3>E-Commerce Solutions</h3>
+              <div class="service-badge">Most Popular</div>
+            </div>
+            <ul class="service-features">
+              <li>
+                <i class="fas fa-check"></i>Toko online dengan fitur lengkap
+              </li>
+              <li>
+                <i class="fas fa-check"></i>Sistem pembayaran terintegrasi
+              </li>
+              <li><i class="fas fa-check"></i>Manajemen inventory otomatis</li>
+              <li><i class="fas fa-check"></i>Dashboard analytics penjualan</li>
+              <li><i class="fas fa-check"></i>Mobile app untuk pelanggan</li>
+            </ul>
+            <div class="service-price">
+              <span class="price-label">Mulai dari</span>
+              <span class="price-amount">Rp 2,5jt</span>
+              <span class="price-period">/paket</span>
+            </div>
+            <a href="#" class="service-btn ripple-effect">
+              <span>Pilih Paket</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card hover-scale">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Business Management</h3>
+            </div>
+            <ul class="service-features">
+              <li>
+                <i class="fas fa-check"></i>Sistem CRM untuk manajemen pelanggan
+              </li>
+              <li><i class="fas fa-check"></i>Aplikasi kasir digital</li>
+              <li><i class="fas fa-check"></i>Laporan keuangan otomatis</li>
+              <li><i class="fas fa-check"></i>Manajemen karyawan</li>
+              <li><i class="fas fa-check"></i>Sistem booking & reservasi</li>
+            </ul>
+            <div class="service-price">
+              <span class="price-label">Mulai dari</span>
+              <span class="price-amount">Rp 1,8jt</span>
+              <span class="price-period">/paket</span>
+            </div>
+            <a href="#" class="service-btn ripple-effect">
+              <span>Pilih Paket</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card hover-scale">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <h3>Digital Marketing</h3>
+            </div>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i>Website company profile</li>
+              <li><i class="fas fa-check"></i>Landing page untuk kampanye</li>
+              <li><i class="fas fa-check"></i>Integrasi social media</li>
+              <li><i class="fas fa-check"></i>Email marketing automation</li>
+              <li><i class="fas fa-check"></i>WhatsApp Business integration</li>
+            </ul>
+            <div class="service-price">
+              <span class="price-label">Mulai dari</span>
+              <span class="price-amount">Rp 1,2jt</span>
+              <span class="price-period">/paket</span>
+            </div>
+            <a href="#" class="service-btn ripple-effect">
+              <span>Pilih Paket</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card hover-scale">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <h3>Training & Konsultasi</h3>
+            </div>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i>Pelatihan penggunaan platform</li>
+              <li><i class="fas fa-check"></i>Konsultasi strategi digital</li>
+              <li><i class="fas fa-check"></i>Workshop digital marketing</li>
+              <li><i class="fas fa-check"></i>Mentoring berkelanjutan</li>
+              <li><i class="fas fa-check"></i>Support teknis 24/7</li>
+            </ul>
+            <div class="service-price">
+              <span class="price-label">Mulai dari</span>
+              <span class="price-amount">Rp 800rb</span>
+              <span class="price-period">/sesi</span>
+            </div>
+            <a href="#" class="service-btn ripple-effect">
+              <span>Pilih Paket</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portofolio">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fas fa-trophy"></i>
+            <span>Portofolio Kami</span>
+          </div>
+          <h2 class="section-title">
+            Kisah Sukses <span class="gradient-text">UMKM</span>
+            Bersama Kami
+          </h2>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-card hover-tilt">
+            <div class="portfolio-image">
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-eye"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Toko Baju Murah Online</h3>
+              <p>E-commerce dengan fitur lengkap untuk fashion retail</p>
+              <div class="portfolio-tags">
+                <span>E-Commerce</span>
+                <span>Mobile App</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card hover-tilt">
+            <div class="portfolio-image">
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-eye"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Warung Makan Digital</h3>
+              <p>Sistem kasir dan manajemen resto terintegrasi</p>
+              <div class="portfolio-tags">
+                <span>POS System</span>
+                <span>Management</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card hover-tilt">
+            <div class="portfolio-image">
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-eye"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Jasa Service Elektronik</h3>
+              <p>Platform booking dan tracking service</p>
+              <div class="portfolio-tags">
+                <span>Booking System</span>
+                <span>CRM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="fas fa-heart"></i>
+            <span>Testimoni</span>
+          </div>
+          <h2 class="section-title">
+            Apa Kata <span class="gradient-text">Klien</span> Kami?
+          </h2>
+        </div>
+        <div class="testimonials-slider" id="testimonialsSlider">
+          <div class="testimonial-card active">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "DigitalinAja membantu toko online saya berkembang pesat. Dalam
+                3 bulan, penjualan meningkat 300%!"
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="author-info">
+                  <h4>Siti Nurhaliza</h4>
+                  <span>Owner Toko Baju Murah</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "Sistem kasir digital dari DigitalinAja sangat membantu mengatur
+                keuangan warung makan saya. Recommended!"
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="author-info">
+                  <h4>Budi Santoso</h4>
+                  <span>Owner Warung Makan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "Platform booking dari DigitalinAja membuat bisnis service saya
+                lebih profesional dan terorganisir."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="author-info">
+                  <h4>Ahmad Fauzi</h4>
+                  <span>Jasa Service Elektronik</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="konsultasi">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h2>Siap Memulai Transformasi Digital?</h2>
+          <p>
+            Bergabunglah dengan ratusan UMKM yang telah berhasil bertransformasi
+            digital bersama DigitalinAja. Konsultasi gratis untuk menentukan
+            solusi terbaik untuk bisnis Anda.
+          </p>
+          <div class="cta-buttons">
+            <a href="#" class="btn-primary btn-large ripple-effect">
+              <i class="fas fa-phone"></i>
+              <span>Konsultasi Gratis Sekarang</span>
+            </a>
+            <a href="#" class="btn-secondary btn-large ripple-effect">
+              <i class="fas fa-eye"></i>
+              <span>Lihat Portfolio Lengkap</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="kontak">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <span class="logo-icon">🚀</span>
+              <span class="logo-text">DigitalinAja</span>
+            </div>
+            <p>
+              Platform inovasi wirausaha digital yang membantu UMKM lokal
+              melakukan transformasi digital dengan mudah dan terjangkau
+              menggunakan teknologi Low Code No Code.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Layanan</h3>
+            <ul class="footer-links">
+              <li><a href="#">E-Commerce Solutions</a></li>
+              <li><a href="#">Business Management</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Perusahaan</h3>
+            <ul class="footer-links">
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Tim</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>ddigitalinaja@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+62 8970 0657 36</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Universitas Ngudi Waluyo, Ungaran</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 DigitalinAja. Semua hak cipta dilindungi.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
